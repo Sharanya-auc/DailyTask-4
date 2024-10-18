@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 100px;
+      }
+      .box {
+        background-color: aqua;
+        padding: 80px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <center><h1>Daily task - 4</h1></center>
+    <div class="container">
+      <div class="box" id="item-1">item1</div>
+      <div class="box" id="item-2">item2</div>
+      <div class="box" id="item-3">item3</div>
+      <div class="box" id="item-4">item4</div>
+    </div>
+
+    <span class="spn"></span>
+    <span class="spn"></span>
+    <span class="spn"></span>
+    <span class="spn"></span>
+
+    
+        <blockquote id="quote">" Time is what we want most, but what we use WORST. " - William Penn</blockquote>
+    
+    <script>
+      // 1. Select Element by ID
+      //  ○ Create an HTML element with a unique ID .
+      //  ○ Usedocument.getElementById to select the element.
+      //  ○ Changethe style of the selected element (e.g., change the background
+      //    color and font size).
+      document.getElementById("item-1").style.backgroundColor = "red";
+      document.getElementById("item-1").style.fontSize = "30px";
+
+      //   2. Select Elements by Class Name
+      //  ○ Create multiple HTML elements with the same class name..
+      //  ○ Usedocument.getElementsByClassName to select the elements.
+      //  ○ Changethe style of the selected elements (e.g., change the text color).
+      document.getElementsByClassName("box")[1].style.color = "white";
+      document.getElementsByClassName("box")[1].style.backgroundColor = "black";
+
+      // 3. Select Elements by Tag Name
+      //  ○ Create multiple HTML elements of the same tag name.
+      //  ○ Usedocument.getElementsByTagName to select the elements.
+      //  ○ Changethe style of the selected elements (e.g., add a border).
+      document.getElementsByTagName("h1")[0].style.backgroundColor = "orange";
+      document.getElementsByTagName("h1")[0].style.border = "2px solid black";
+
+      // 4. Select Element by Query Selector
+      //  ○ Create an HTML element with a nested structure.
+      //  ○ Usedocument.querySelector to select a specific element within the
+      //    structure.
+      //  ○ Changethe style of the selected element (e.g., change the font style).
+      document.querySelector("#item-3").style.backgroundColor = "red";
+      document.querySelector("#item-3").style.fontFamily =
+        "Arial, Helvetica, sans-serif";
+
+      // 5. Select Elements by Query Selector All
+      //  ○ Create multiple HTML elements with a similar attribute (e.g., multiple span
+      //  elements with a class item).
+      //  ○ Usedocument.querySelectorAll to select the elements.
+      console.log(document.querySelectorAll(".spn"));
+
+      //6. Change Styles of Selected Elements
+      //  ○ Create a unique element that represents something about you (e.g., a
+      //  favorite quote, hobby, or place).
+      //  ○ UseJavaScript to style this element.  
+        let timequote = document.querySelector("#quote");
+        timequote.style.backgroundColor="#B2BEB5";
+        timequote.style.padding="20px";
+        timequote.style.marginTop="100px";
+        timequote.style.marginLeft="320px";
+        timequote.style.width="800px";
+        timequote.style.textAlign="center";
+    </script>
+  </body>
+</html>
